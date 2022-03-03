@@ -3,7 +3,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: sen;
+  src: url('./fonts/outfit/fonts/ttf/Outfit-SemiBold.ttf');
+}
+@font-face {
+  font-family: bennn;
+  src: url('./fonts/Sora/Sora-VariableFont_wght.ttf');
+}
 .main {
   height: auto;
   width: 100%;
@@ -24,6 +31,7 @@
   top: 0;
   left: 0;
   z-index: 10;
+  font-family: sen;
 }
 .cartIcon {
   cursor: pointer;
@@ -38,7 +46,7 @@
   column-gap: 80px;
   row-gap: 80px;
   margin-top: 80px;
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(240, 240, 240);
 }
 .product {
   height: 340px;
@@ -77,6 +85,7 @@
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   color: #ffffff;
+  font-family: bennn;
 }
 .productDesc {
   height: 70%;
@@ -86,6 +95,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  font-family: bennn;
 }
 .productPrice {
   height: 30%;
@@ -105,10 +115,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* background-color: #942727; */
   z-index: 5;
   background-color: rgb(32, 32, 32);
   color: #ffffff;
+  font-family: bennn;
 }
 .modalImg {
   width: 60%;
@@ -178,7 +188,6 @@
 .cart button {
   height: 32px;
   width: 160px;
-  background-color: #ac2b0b;
   color: #ffffff;
   border: none;
   border-radius: 4px;
@@ -268,4 +277,8 @@
 }
 .QuantityControlers span {
   color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width:480px) {
+  
 }

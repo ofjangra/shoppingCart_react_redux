@@ -115,7 +115,7 @@ const Header = () => {
           {initState.length === 0 ? (
             <p>Cart is Empty</p>
           ) : (
-            <button onClick={() => alert(initState)}>Place Order</button>
+            <button onClick={() => console.log(initState)}>Place Order</button>
           )}
         </div>
       </div>
